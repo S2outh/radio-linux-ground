@@ -120,8 +120,8 @@ checksum = "613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724"
 
 [[package]]
 name = "chell"
-version = "6.2.0"
-source = "git+https://github.com/S2outh/chell-sys.git#966a097d37b6d37e1567ee802e9f59d59e598952"
+version = "6.4.0"
+source = "git+https://github.com/S2outh/chell-sys.git#4f8a20ea25f5ba92eec8249e36c0cc62d13bac04"
 dependencies = [
  "chell-macros",
  "erased-serde",
@@ -130,8 +130,8 @@ dependencies = [
 
 [[package]]
 name = "chell-macros"
-version = "6.2.0"
-source = "git+https://github.com/S2outh/chell-sys.git#966a097d37b6d37e1567ee802e9f59d59e598952"
+version = "6.4.0"
+source = "git+https://github.com/S2outh/chell-sys.git#4f8a20ea25f5ba92eec8249e36c0cc62d13bac04"
 dependencies = [
  "heck",
  "proc-macro2",
@@ -860,18 +860,18 @@ checksum = "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
 
 [[package]]
 name = "pin-project"
-version = "1.1.11"
+version = "1.1.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f1749c7ed4bcaf4c3d0a3efc28538844fb29bcdd7d2b67b2be7e20ba861ff517"
+checksum = "cbf0d9e68100b3a7989b4901972f265cd542e560a3a8a724e1e20322f4d06ce9"
 dependencies = [
  "pin-project-internal",
 ]
 
 [[package]]
 name = "pin-project-internal"
-version = "1.1.11"
+version = "1.1.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9b20ed30f105399776b9c883e68e536ef602a16ae6f596d2c473591d6ad64c6"
+checksum = "a990e22f43e84855daf260dded30524ef4a9021cc7541c26540500a50b624389"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1335,7 +1335,7 @@ dependencies = [
 [[package]]
 name = "south-common"
 version = "4.0.0"
-source = "git+https://github.com/S2outh/south-common.git#f4a06fd5daa5e4b8c3cf2128da758bc4c5f95df0"
+source = "git+https://github.com/S2outh/south-common.git#c998afbaf8ed7f3efd04c2607d5d87e0fa4dffab"
 dependencies = [
  "bitflags 2.11.1",
  "chell",
