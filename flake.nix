@@ -24,17 +24,7 @@
             fenix.overlays.default 
           ];
         };
-        profile = pkgs.fenix.complete;
-        raspi-std-lib = pkgs.fenix.targets.aarch64-unknown-linux-musl.latest;
-        aarch64-musl-cross = pkgs.pkgsCross.aarch64-multiplatform-musl;
-        rust-toolchain = pkgs.fenix.combine [
-          profile.rustc-unwrapped
-          profile.rust-src
-          profile.cargo
-          profile.rustfmt
-          profile.clippy
-          raspi-std-lib.rust-std
-        ];
+        rust-toolchain = pkgs.fenix.complete.toolchain;
       in
       {
         devShells.default =
@@ -50,8 +40,6 @@
 
           # set the rust src for rust_analyzer
           RUST_SRC_PATH = "${rust-toolchain}/lib/rustlib/src/rust/library";
-          # set c cross lib path for cross compilation
-          CC_aarch64_unknown_linux_musl = "${aarch64-musl-cross.stdenv.cc}/bin/aarch64-unknown-linux-musl-cc";
         };
 
         packages.default = 
