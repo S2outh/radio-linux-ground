@@ -161,7 +161,7 @@ pub async fn run(config: GSTConfig) -> Result<(), GSTError> {
                     },
                     LSTMessage::Ack => println!("[LST] Ack"),
                     LSTMessage::Nack => println!("[LST] Nack"),
-                    LSTMessage::Unknown(a) => println!("[LST] Unknown: {}", a),
+                    LSTMessage::Unknown(a, _) => println!("[LST] Unknown: {}", a),
                 }
             },
             Err(e) => {
